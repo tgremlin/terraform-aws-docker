@@ -3,7 +3,9 @@ version: 2.1
 workflows:
   build:
     jobs:
-      - build
+      - build:
+          context:
+            - org-global
       - upload:
           context:
             - org-global
