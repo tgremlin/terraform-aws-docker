@@ -9,6 +9,8 @@ workflows:
       - upload:
           context:
             - org-global
+          requires:
+            - build
 jobs:
   build:
     machine: true 
